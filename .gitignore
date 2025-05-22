@@ -1,7 +1,7 @@
 # Python
 __pycache__/
 *.py[cod]
-*$py.class
+*.class
 *.so
 .Python
 build/
@@ -21,33 +21,69 @@ wheels/
 *.egg
 MANIFEST
 
-# Virtual Environment
+# Virtual environments
 venv/
 env/
 ENV/
-
-# Jupyter Notebook
-.ipynb_checkpoints
-
-# Output directories
-output/
-*.log
+env.bak/
+venv.bak/
 
 # IDE
 .vscode/
 .idea/
 *.swp
 *.swo
+*~
+
+# Testing
+.coverage
+.pytest_cache/
+.tox/
+.coverage.*
+htmlcov/
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+.hypothesis/
+
+# Jupyter Notebook
+.ipynb_checkpoints
+
+# Environment variables
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
 
 # OS
 .DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
 Thumbs.db
 
-# Data files (uncomment if you want to exclude data)
-# *.csv
-# *.xlsx
-# *.json
+# Logs
+*.log
+logs/
 
 # Temporary files
 *.tmp
 *.temp
+temp/
+tmp/
+
+# Output files (but keep directory structure)
+output/
+results/
+!output/.gitkeep
+!results/.gitkeep
+
+# Large data files
+*.zip
+*.gz
+*.tar
+*.tar.gz
